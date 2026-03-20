@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sé dueño de tu tiempo</title>
+  <meta name="description" content="Landing del libro Sé dueño de tu tiempo con calculadoras patrimoniales completas: gastos, fondo de tranquilidad, interés compuesto, número de la paz, alquiler, primera vivienda, asset allocation y tres bolsillos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">Sé dueño de tu tiempo</div>
+      <nav class="nav-links">
+        <a href="#libro">Libro</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-sm" href="https://www.amazon.es/" target="_blank" rel="noopener noreferrer">Comprar en Amazon</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="libro">
+      <div class="hero-copy">
+        <span class="eyebrow">Libro + calculadoras completas abiertas</span>
+        <h1>Sé dueño de tu tiempo</h1>
+        <p class="hero-subtitle">Cómo convertir tu salario en patrimonio con vivienda, inversión indexada y activos reales.</p>
+        <p class="hero-text">Una landing pensada para vender el libro y, a la vez, ofrecer a cualquier lector acceso público al soporte completo de cálculos: gastos, fondo de tranquilidad, interés compuesto, número de la paz, rentabilidad de alquiler, primera vivienda, asset allocation y método de los tres bolsillos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://www.amazon.es/" target="_blank" rel="noopener noreferrer">Comprar el libro</a>
+          <a class="btn btn-secondary" href="#herramientas">Usar las herramientas</a>
+        </div>
+        <div class="hero-badges">
+          <span>Acceso gratuito</span>
+          <span>Sin registro</span>
+          <span>Compatible con móvil</span>
+        </div>
+      </div>
+      <div class="hero-cover-wrap">
+        <img src="assets/cover.jpg" alt="Portada del libro Sé dueño de tu tiempo" class="hero-cover" />
+      </div>
+    </section>
+
+    <section class="section container metrics-grid" id="herramientas">
+      <article class="metric-card">
+        <div class="metric-label">Ahorro mensual</div>
+        <div class="metric-value" id="kpiAhorro">-</div>
+        <div class="metric-note" id="kpiAhorroNote">Capacidad actual de ahorro</div>
+      </article>
+      <article class="metric-card">
+        <div class="metric-label">Fondo en meses</div>
+        <div class="metric-value" id="kpiFondo">-</div>
+        <div class="metric-note" id="kpiFondoNote">Cobertura del fondo actual</div>
+      </article>
+      <article class="metric-card">
+        <div class="metric-label">Progreso Número de la Paz</div>
+        <div class="metric-value" id="kpiPaz">-</div>
+        <div class="metric-note" id="kpiPazNote">Sobre objetivo x25</div>
+      </article>
+      <article class="metric-card">
+        <div class="metric-label">Cash flow alquiler</div>
+        <div class="metric-value" id="kpiAlquiler">-</div>
+        <div class="metric-note" id="kpiAlquilerNote">Mensual</div>
+      </article>
+    </section>
+
+    <section class="section container intro-grid">
+      <div class="panel panel-copy">
+        <h2>Qué resuelve esta web</h2>
+        <p>No es una página decorativa. Es una extensión operativa del libro. Quien llegue aquí debe poder entender la tesis, ver la portada, ir a Amazon y usar las calculadoras sin descargar nada.</p>
+        <ul class="feature-list">
+          <li>Replica la lógica del Excel del libro.</li>
+          <li>Conecta los módulos entre sí, como en la hoja original.</li>
+          <li>Sirve como landing comercial y como herramienta pública.</li>
+          <li>Se puede subir gratis a GitHub Pages.</li>
+        </ul>
+      </div>
+      <div class="panel panel-copy">
+        <h2>Cómo usarlo</h2>
+        <p>Empieza por el módulo de gastos y ahorro. A partir de ahí, varias calculadoras heredan valores automáticamente: fondo de tranquilidad, número de la paz y asset allocation. Puedes tocar todos los inputs y ver el efecto inmediato.</p>
+        <div class="callout">
+          <strong>Nota:</strong> la lógica se ha replicado siguiendo el comportamiento del Excel tal como está planteado en el archivo de soporte.
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="modulos">
+      <div class="section-head">
+        <span class="eyebrow">Herramientas del libro</span>
+        <h2>Panel patrimonial completo</h2>
+        <p>Ocho módulos conectados y un dashboard resumen para visualizar el sistema completo.</p>
+      </div>
+
+      <div class="tab-bar" id="tabBar">
+        <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+        <button class="tab-btn" data-tab="gastos">Gastos y ahorro</button>
+        <button class="tab-btn" data-tab="fondo">Fondo</button>
+        <button class="tab-btn" data-tab="interes">Interés</button>
+        <button class="tab-btn" data-tab="paz">Número de la Paz</button>
+        <button class="tab-btn" data-tab="alquiler">Alquiler</button>
+        <button class="tab-btn" data-tab="vivienda">Primera vivienda</button>
+        <button class="tab-btn" data-tab="allocation">Allocation</button>
+        <button class="tab-btn" data-tab="bolsillos">Tres bolsillos</button>
+      </div>
+
+      <div class="tab-content active" id="tab-dashboard">
+        <div class="dashboard-grid">
+          <article class="panel span-2">
+            <h3>Mix mensual</h3>
+            <div class="stack-bars">
+              <div>
+                <div class="stack-label"><span>Gasto necesario</span><strong id="dashGastoNecesario">-</strong></div>
+                <div class="progress"><span id="dashGastoNecesarioBar"></span></div>
+              </div>
+              <div>
+                <div class="stack-label"><span>Gasto discrecional</span><strong id="dashGastoDiscrecional">-</strong></div>
+                <div class="progress"><span id="dashGastoDiscrecionalBar"></span></div>
+              </div>
+              <div>
+                <div class="stack-label"><span>Ahorro mensual</span><strong id="dashAhorro">-</strong></div>
+                <div class="progress"><span id="dashAhorroBar"></span></div>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Fondo de tranquilidad</h3>
+            <div class="ladder" id="fundLadder"></div>
+          </article>
+          <article class="panel span-2">
+            <h3>Coste de esperar para invertir</h3>
+            <div class="wait-grid" id="waitGrid"></div>
+          </article>
+          <article class="panel">
+            <h3>Progreso del Número de la Paz</h3>
+            <div class="big-ring">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="48"></circle>
+                <circle id="peaceRing" cx="60" cy="60" r="48"></circle>
+              </svg>
+              <div class="ring-center">
+                <strong id="peaceRingText">-</strong>
+                <span id="peaceRingState">-</span>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Alquiler</h3>
+            <div class="mini-metrics two-cols">
+              <div><span>Ingreso neto</span><strong id="dashIngresoNeto">-</strong></div>
+              <div><span>Hipoteca anual</span><strong id="dashHipoteca">-</strong></div>
+              <div><span>Cash flow anual</span><strong id="dashCashFlowAnual">-</strong></div>
+              <div><span>Cash flow mensual</span><strong id="dashCashFlowMensual">-</strong></div>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Patrimonio</h3>
+            <div class="allocation-bars">
+              <div class="stack-label"><span>Inmobiliario</span><strong id="dashPatrimonioInmo">-</strong></div>
+              <div class="progress"><span id="dashPatrimonioInmoBar"></span></div>
+              <div class="stack-label"><span>Líquido</span><strong id="dashPatrimonioLiquido">-</strong></div>
+              <div class="progress"><span id="dashPatrimonioLiquidoBar"></span></div>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Escalera vivienda</h3>
+            <div class="mini-metrics">
+              <div><span>Ahorros actuales</span><strong id="dashAhorrosActuales">-</strong></div>
+              <div><span>Capital salto</span><strong id="dashCapitalSalto">-</strong></div>
+              <div><span>Próxima entrada</span><strong id="dashProximaEntrada">-</strong></div>
+              <div><span>Cobertura</span><strong id="dashCoberturaSalto">-</strong></div>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Tres bolsillos</h3>
+            <div class="mini-metrics">
+              <div><span>Aporta A</span><strong id="dashAportaA">-</strong></div>
+              <div><span>Aporta B</span><strong id="dashAportaB">-</strong></div>
+              <div><span>Libre A</span><strong id="dashLibreA">-</strong></div>
+              <div><span>Libre B</span><strong id="dashLibreB">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-gastos">
+        <div class="module-grid">
+          <article class="panel">
+            <h3>Entradas principales</h3>
+            <div class="form-grid two-cols">
+              <label>Ingreso neto mensual<input type="number" step="0.01" id="ga_b4"></label>
+              <label>Ingresos alquiler / mes<input type="number" step="0.01" id="ga_b5"></label>
+              <label>Objetivo de ahorro (%)<input type="number" step="0.01" id="ga_b6"></label>
+              <label>Saldo fondo actual<input type="number" step="0.01" id="ga_b7"></label>
+              <label>Capital fondos indexados<input type="number" step="0.01" id="ga_b8"></label>
+              <label>Equity inmobiliario actual<input type="number" step="0.01" id="ga_b9"></label>
+            </div>
+          </article>
+          <article class="panel span-2">
+            <h3>Autopsia de gastos · últimos 3 meses</h3>
+            <div class="table-wrap">
+              <table class="data-table" id="gaTable">
+                <thead>
+                  <tr><th>Categoría</th><th>Tipo</th><th>Mes 1</th><th>Mes 2</th><th>Mes 3</th><th>Promedio</th><th>% ingresos</th></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </article>
+          <article class="panel span-3">
+            <h3>Resumen automático</h3>
+            <div class="mini-metrics three-cols">
+              <div><span>Ingresos totales</span><strong id="ga_res_b26">-</strong></div>
+              <div><span>Gasto necesario</span><strong id="ga_res_b27">-</strong></div>
+              <div><span>Gasto discrecional</span><strong id="ga_res_b28">-</strong></div>
+              <div><span>Gasto total</span><strong id="ga_res_b29">-</strong></div>
+              <div><span>Capacidad ahorro</span><strong id="ga_res_b30">-</strong></div>
+              <div><span>Tasa ahorro real</span><strong id="ga_res_b31">-</strong></div>
+              <div><span>Transferencia sugerida</span><strong id="ga_res_b32">-</strong></div>
+              <div><span>Objetivo mensual</span><strong id="ga_res_b33">-</strong></div>
+              <div><span>Margen objetivo</span><strong id="ga_res_b34">-</strong></div>
+              <div><span>Meses cubiertos por fondo</span><strong id="ga_res_b35">-</strong></div>
+            </div>
+            <div class="reading-grid two-cols top-gap">
+              <div class="reading-card"><span>Lectura gasto necesario</span><strong id="ga_read_26">-</strong></div>
+              <div class="reading-card"><span>Lectura gasto discrecional</span><strong id="ga_read_27">-</strong></div>
+              <div class="reading-card"><span>Lectura ahorro</span><strong id="ga_read_28">-</strong></div>
+              <div class="reading-card"><span>Sugerencia</span><strong id="ga_read_29">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-fondo">
+        <div class="module-grid">
+          <article class="panel">
+            <h3>Inputs base</h3>
+            <div class="mini-metrics">
+              <div><span>Gasto necesario mensual</span><strong id="ft_b4">-</strong></div>
+              <div><span>Saldo actual del fondo</span><strong id="ft_b5">-</strong></div>
+            </div>
+          </article>
+          <article class="panel span-2">
+            <h3>Ahorro recomendado</h3>
+            <div class="table-wrap">
+              <table class="data-table" id="ftTable">
+                <thead>
+                  <tr><th>Meses</th><th>Objetivo</th><th>Gap / colchón</th><th>Estado</th><th>Comentario</th></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </article>
+          <article class="panel span-3">
+            <h3>Lectura rápida</h3>
+            <div class="mini-metrics three-cols">
+              <div><span>Cobertura actual</span><strong id="ft_b19">-</strong></div>
+              <div><span>Objetivo recomendado</span><strong id="ft_b20">-</strong></div>
+              <div><span>Ahorro adicional necesario</span><strong id="ft_b21">-</strong></div>
+              <div class="full"><span>Comentario</span><strong id="ft_b22">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-interes">
+        <div class="module-grid">
+          <article class="panel">
+            <h3>Simulador principal</h3>
+            <div class="form-grid two-cols">
+              <label>Capital inicial<input type="number" step="0.01" id="ic_b4"></label>
+              <label>Aportación mensual<input type="number" step="0.01" id="ic_b5"></label>
+              <label>Rentabilidad anual esperada<input type="number" step="0.01" id="ic_b6"></label>
+              <label>Años<input type="number" step="0.01" id="ic_b7"></label>
+              <label>Inflación anual<input type="number" step="0.01" id="ic_b8"></label>
+              <label>Años que esperarías<input type="number" step="0.01" id="ic_b9"></label>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Comparativa empezar hoy vs esperar</h3>
+            <div class="form-grid two-cols">
+              <label>Gasto hormiga mensual<input type="number" step="0.01" id="ic_f8"></label>
+              <label>Años de inversión<input type="number" step="0.01" id="ic_f9"></label>
+            </div>
+            <div class="mini-metrics top-gap">
+              <div><span>Valor futuro si empiezas hoy</span><strong id="ic_f4">-</strong></div>
+              <div><span>Valor futuro si esperas</span><strong id="ic_f5">-</strong></div>
+              <div><span>Coste de esperar</span><strong id="ic_f6">-</strong></div>
+              <div><span>Valor futuro perdido</span><strong id="ic_f10">-</strong></div>
+            </div>
+          </article>
+          <article class="panel span-2">
+            <h3>Resultados</h3>
+            <div class="mini-metrics four-cols">
+              <div><span>Valor futuro nominal</span><strong id="ic_b13">-</strong></div>
+              <div><span>Total aportado</span><strong id="ic_b14">-</strong></div>
+              <div><span>Ganancia nominal</span><strong id="ic_b15">-</strong></div>
+              <div><span>Valor futuro real aprox.</span><strong id="ic_b16">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-paz">
+        <div class="module-grid">
+          <article class="panel">
+            <h3>Inputs</h3>
+            <div class="form-grid two-cols">
+              <label>Gasto mensual manual (opcional)<input type="number" step="0.01" id="np_b5"></label>
+              <label>Rentabilidad anual esperada<input type="number" step="0.01" id="np_b9"></label>
+              <label>Multiplicador estándar<input type="number" step="0.01" id="np_b10"></label>
+              <label>Multiplicador conservador<input type="number" step="0.01" id="np_b11"></label>
+              <label>Multiplicador perpetuo<input type="number" step="0.01" id="np_b12"></label>
+            </div>
+            <div class="mini-metrics top-gap">
+              <div><span>Gasto mensual auto</span><strong id="np_b4">-</strong></div>
+              <div><span>Gasto considerado</span><strong id="np_b6">-</strong></div>
+              <div><span>Capital financiero actual</span><strong id="np_b7">-</strong></div>
+              <div><span>Aportación anual futura</span><strong id="np_b8">-</strong></div>
+            </div>
+          </article>
+          <article class="panel span-2">
+            <h3>Resultados</h3>
+            <div class="mini-metrics three-cols">
+              <div><span>Gasto anual referencia</span><strong id="np_b15">-</strong></div>
+              <div><span>Número de la Paz x25</span><strong id="np_b16">-</strong></div>
+              <div><span>Objetivo x28</span><strong id="np_b17">-</strong></div>
+              <div><span>Objetivo x30</span><strong id="np_b18">-</strong></div>
+              <div><span>Progreso x25</span><strong id="np_b19">-</strong></div>
+              <div><span>Progreso x28</span><strong id="np_b20">-</strong></div>
+              <div><span>Progreso x30</span><strong id="np_b21">-</strong></div>
+              <div><span>Hito 10%</span><strong id="np_b22">-</strong></div>
+              <div><span>Hito 50%</span><strong id="np_b23">-</strong></div>
+              <div><span>Hito 100%</span><strong id="np_b24">-</strong></div>
+              <div><span>Años estimados x25</span><strong id="np_b25">-</strong></div>
+              <div><span>Años estimados x28</span><strong id="np_b26">-</strong></div>
+              <div><span>Años estimados x30</span><strong id="np_b27">-</strong></div>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Lectura por etapas</h3>
+            <div class="reading-grid">
+              <div class="reading-card"><span>Nivel 1 (10%)</span><strong id="np_f4">-</strong></div>
+              <div class="reading-card"><span>Nivel 2 (50%)</span><strong id="np_f5">-</strong></div>
+              <div class="reading-card"><span>Nivel 3 (100%)</span><strong id="np_f6">-</strong></div>
+              <div class="reading-card"><span>Estado actual</span><strong id="np_f8">-</strong></div>
+              <div class="reading-card"><span>Comentario</span><strong id="np_f9">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-alquiler">
+        <div class="module-grid">
+          <article class="panel span-2">
+            <h3>Inputs de compra y operación</h3>
+            <div class="form-grid two-cols">
+              <label>Precio de compra<input type="number" step="0.01" id="ra_b4"></label>
+              <label>Alquiler mensual<input type="number" step="0.01" id="ra_b5"></label>
+              <label>Impuestos + gastos compra (%)<input type="number" step="0.01" id="ra_b6"></label>
+              <label>IBI anual<input type="number" step="0.01" id="ra_b7"></label>
+              <label>Comunidad anual<input type="number" step="0.01" id="ra_b8"></label>
+              <label>Seguro hogar anual<input type="number" step="0.01" id="ra_b9"></label>
+              <label>Seguro impago anual<input type="number" step="0.01" id="ra_b10"></label>
+              <label>Mantenimiento + vacancia anual<input type="number" step="0.01" id="ra_b11"></label>
+              <label>Otros gastos anuales<input type="number" step="0.01" id="ra_b12"></label>
+              <label>% financiado por banco<input type="number" step="0.01" id="ra_b13"></label>
+              <label>Interés hipoteca<input type="number" step="0.01" id="ra_b14"></label>
+              <label>Plazo hipoteca (años)<input type="number" step="0.01" id="ra_b15"></label>
+              <label>Reforma inicial<input type="number" step="0.01" id="ra_b16"></label>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Filtro rápido</h3>
+            <div class="reading-grid">
+              <div class="reading-card"><span>Rentabilidad bruta</span><strong id="ra_f4">-</strong></div>
+              <div class="reading-card"><span>Rentabilidad neta</span><strong id="ra_f5">-</strong></div>
+              <div class="reading-card"><span>Cash flow</span><strong id="ra_f6">-</strong></div>
+              <div class="reading-card"><span>Lectura global</span><strong id="ra_f7">-</strong></div>
+            </div>
+          </article>
+          <article class="panel span-3">
+            <h3>Resultados clave</h3>
+            <div class="mini-metrics four-cols">
+              <div><span>Alquiler anual</span><strong id="ra_b19">-</strong></div>
+              <div><span>Imp. y gastos compra</span><strong id="ra_b20">-</strong></div>
+              <div><span>Coste total adquisición</span><strong id="ra_b21">-</strong></div>
+              <div><span>Gastos anuales totales</span><strong id="ra_b22">-</strong></div>
+              <div><span>Ingreso neto antes hipoteca</span><strong id="ra_b23">-</strong></div>
+              <div><span>Rentabilidad bruta</span><strong id="ra_b24">-</strong></div>
+              <div><span>Rentabilidad neta</span><strong id="ra_b25">-</strong></div>
+              <div><span>Importe hipoteca</span><strong id="ra_b26">-</strong></div>
+              <div><span>Dinero aportado por ti</span><strong id="ra_b27">-</strong></div>
+              <div><span>Cuota mensual hipoteca</span><strong id="ra_b28">-</strong></div>
+              <div><span>Cuota anual hipoteca</span><strong id="ra_b29">-</strong></div>
+              <div><span>Cash flow anual</span><strong id="ra_b30">-</strong></div>
+              <div><span>Cash flow mensual</span><strong id="ra_b31">-</strong></div>
+              <div><span>ROI / Cash on Cash</span><strong id="ra_b32">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-vivienda">
+        <div class="module-grid">
+          <article class="panel span-2">
+            <h3>Inputs</h3>
+            <div class="form-grid two-cols">
+              <label>Precio vivienda puente<input type="number" step="0.01" id="pv_b4"></label>
+              <label>Financiación banco (%)<input type="number" step="0.01" id="pv_b5"></label>
+              <label>Impuestos + gastos (%)<input type="number" step="0.01" id="pv_b6"></label>
+              <label>Ahorros actuales<input type="number" step="0.01" id="pv_b7"></label>
+              <label>Ahorro mensual futuro<input type="number" step="0.01" id="pv_b8"></label>
+              <label>Interés hipoteca<input type="number" step="0.01" id="pv_b9"></label>
+              <label>Plazo hipoteca (años)<input type="number" step="0.01" id="pv_b10"></label>
+              <label>Alquiler mensual actual<input type="number" step="0.01" id="pv_b11"></label>
+              <label>Años previstos hasta vender<input type="number" step="0.01" id="pv_b12"></label>
+              <label>Revalorización anual esperada<input type="number" step="0.01" id="pv_b13"></label>
+              <label>Precio próxima vivienda<input type="number" step="0.01" id="pv_b14"></label>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Lectura rápida</h3>
+            <div class="reading-grid">
+              <div class="reading-card"><span>Entrada alcanzable</span><strong id="pv_f4">-</strong></div>
+              <div class="reading-card"><span>Cuota vs alquiler</span><strong id="pv_f5">-</strong></div>
+              <div class="reading-card"><span>Salto futuro</span><strong id="pv_f6">-</strong></div>
+            </div>
+          </article>
+          <article class="panel span-3">
+            <h3>Resultados</h3>
+            <div class="mini-metrics four-cols">
+              <div><span>Entrada necesaria</span><strong id="pv_b17">-</strong></div>
+              <div><span>Gastos compra</span><strong id="pv_b18">-</strong></div>
+              <div><span>Ahorro total necesario</span><strong id="pv_b19">-</strong></div>
+              <div><span>Gap de ahorro</span><strong id="pv_b20">-</strong></div>
+              <div><span>Meses hasta entrada</span><strong id="pv_b21">-</strong></div>
+              <div><span>Cuota mensual hipoteca</span><strong id="pv_b22">-</strong></div>
+              <div><span>Diferencia alquiler-hipoteca</span><strong id="pv_b23">-</strong></div>
+              <div><span>Ahorro anual adicional</span><strong id="pv_b24">-</strong></div>
+              <div><span>Valor estimado venta</span><strong id="pv_b25">-</strong></div>
+              <div><span>Deuda pendiente</span><strong id="pv_b26">-</strong></div>
+              <div><span>Patrimonio bruto al vender</span><strong id="pv_b27">-</strong></div>
+              <div><span>Ahorro adicional acumulado</span><strong id="pv_b28">-</strong></div>
+              <div><span>Capital total para salto</span><strong id="pv_b29">-</strong></div>
+              <div><span>Entrada + gastos siguiente</span><strong id="pv_b30">-</strong></div>
+              <div><span>% cubierto del salto</span><strong id="pv_b31">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-allocation">
+        <div class="module-grid">
+          <article class="panel">
+            <h3>Inputs</h3>
+            <div class="form-grid two-cols">
+              <label>Años hasta libertad financiera<input type="number" step="0.01" id="aa_b4"></label>
+              <label>Equity inmobiliario actual<input type="number" step="0.01" id="aa_b5"></label>
+            </div>
+            <div class="mini-metrics top-gap">
+              <div><span>Capital líquido actual</span><strong id="aa_b6">-</strong></div>
+              <div><span>Patrimonio total</span><strong id="aa_b10">-</strong></div>
+              <div><span>% inmobiliario</span><strong id="aa_b11">-</strong></div>
+              <div><span>% líquido</span><strong id="aa_b12">-</strong></div>
+              <div><span>Diagnóstico</span><strong id="aa_b13">-</strong></div>
+            </div>
+          </article>
+          <article class="panel span-2">
+            <h3>Asignación sugerida para activos líquidos</h3>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr><th>Etapa</th><th>Renta variable</th><th>Renta fija / efectivo</th><th>Oro + Bitcoin</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Acumulación (&gt;15 años)</td><td>80%</td><td>10%</td><td>10%</td></tr>
+                  <tr><td>Transición (5-15 años)</td><td>60%</td><td>30%</td><td>10%</td></tr>
+                  <tr><td>Conservación (&lt;5 años)</td><td>35%</td><td>55%</td><td>10%</td></tr>
+                  <tr><td>Cosecha / libertad</td><td>55%</td><td>35%</td><td>10%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="reading-grid top-gap two-cols">
+              <div class="reading-card"><span>Etapa sugerida hoy</span><strong id="aa_f12">-</strong></div>
+              <div class="reading-card"><span>Idea fuerza</span><strong id="aa_f13">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-bolsillos">
+        <div class="module-grid">
+          <article class="panel">
+            <h3>Inputs</h3>
+            <div class="form-grid two-cols">
+              <label>Ingreso neto mensual Persona A<input type="number" step="0.01" id="tb_b4"></label>
+              <label>Ingreso neto mensual Persona B<input type="number" step="0.01" id="tb_b5"></label>
+              <label>Gastos comunes mensuales<input type="number" step="0.01" id="tb_b6"></label>
+              <label>Ahorro/inversión común deseado<input type="number" step="0.01" id="tb_b7"></label>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Lectura</h3>
+            <div class="reading-grid">
+              <div class="reading-card"><span>Modelo</span><strong>Soberanía individual + destino compartido</strong></div>
+              <div class="reading-card"><span>Ventaja</span><strong>El esfuerzo se reparte según ingresos, no a partes iguales</strong></div>
+              <div class="reading-card"><span>Recordatorio</span><strong>Bolsillo A y B: autonomía. Bolsillo C: proyecto común</strong></div>
+            </div>
+          </article>
+          <article class="panel span-2">
+            <h3>Reparto proporcional</h3>
+            <div class="mini-metrics four-cols">
+              <div><span>Ingreso conjunto</span><strong id="tb_b11">-</strong></div>
+              <div><span>% aporte A</span><strong id="tb_b12">-</strong></div>
+              <div><span>% aporte B</span><strong id="tb_b13">-</strong></div>
+              <div><span>Aportación A</span><strong id="tb_b14">-</strong></div>
+              <div><span>Aportación B</span><strong id="tb_b15">-</strong></div>
+              <div><span>Resto libre A</span><strong id="tb_b16">-</strong></div>
+              <div><span>Resto libre B</span><strong id="tb_b17">-</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container faq-section" id="faq">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Preguntas habituales</h2>
+      </div>
+      <div class="faq-grid">
+        <details class="faq-item" open>
+          <summary>¿Se puede publicar gratis?</summary>
+          <p>Sí. Esta estructura está pensada para subirla a GitHub Pages sin coste. Solo necesitas un repositorio con estos archivos.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Hace falta descargar el Excel?</summary>
+          <p>No. La idea de esta versión es que las calculadoras estén accesibles para todo el mundo directamente desde la web.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Los enlaces de Amazon ya son definitivos?</summary>
+          <p>No. Ahora mismo son placeholders. Sustitúyelos por la URL real de tu ficha en KDP cuando el libro esté publicado.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿La lógica es igual a la del archivo?</summary>
+          <p>Se ha replicado siguiendo el comportamiento del Excel de soporte del libro, incluyendo dependencias entre módulos.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>Sé dueño de tu tiempo</strong>
+        <p>Libro + herramientas abiertas de construcción de patrimonio.</p>
+      </div>
+      <a class="btn btn-sm btn-secondary" href="https://www.amazon.es/" target="_blank" rel="noopener noreferrer">Comprar en Amazon</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
