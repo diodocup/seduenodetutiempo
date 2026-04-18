@@ -846,6 +846,12 @@ summary:focus-visible {
     align-items: flex-start;
   }
 
+  .contact-actions {
+    width: 100%;
+    flex: none;
+    margin-top: 20px;
+  }
+
   .closing-actions {
     width: 100%;
     flex: none;
