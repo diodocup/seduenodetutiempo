@@ -698,9 +698,14 @@ summary:focus-visible {
   line-height: 1.7;
 }
 
+.contact-links {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
 .contact-email {
   display: inline-block;
-  margin-top: 18px;
   color: var(--accent);
   font-size: 18px;
   font-weight: 800;
@@ -709,8 +714,17 @@ summary:focus-visible {
   word-break: break-word;
 }
 
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 0 0 260px;
+}
+
 .contact-button {
-  flex: 0 0 auto;
+  width: 100%;
+  min-width: 0;
+  text-align: center;
 }
 
 .check-list-muted li::before {
