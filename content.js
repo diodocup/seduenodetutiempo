@@ -215,6 +215,36 @@ export const SITE_CONTENT = {
       "Esperas una receta automática que elimine por completo el criterio personal.",
     ],
   },
+  amazonReviews: {
+    items: [
+      {
+        title:
+          "Muy recomendable si buscas una guía clara, práctica y adaptada a España",
+        meta: "19 abril 2026",
+        text:
+          "Está escrito de una forma muy clara, directa y fácil de seguir, sin tecnicismos innecesarios ni tono de gurú. Lo que más me ha gustado es que no se queda en ideas genéricas o copiadas del mercado americano, sino que está muy enfocado a la realidad española: vivienda, fiscalidad, pensiones, fondos indexados, deuda, ahorro, etc.",
+      },
+      {
+        title:
+          "Querrás seguir leyendo; nunca pensé que diría eso de un libro sobre ahorro e inversión.",
+        meta: "11 abril 2026",
+        text:
+          "Es normal que una novela de suspense te mantenga enganchado a sus páginas y quieras seguir leyendo, pero tiene mérito que sea capaz de hacerlo un libro sobre estrategias de ahorro e inversión y... con este libro, querrás seguir aprendiendo según vayas avanzando sus páginas. Escrito y explicado de forma sencilla y al grano, aporta una forma pragmática y aplicada de establecer tu estrategia de inversión y ahorro.",
+      },
+      {
+        title: "Educación financiera",
+        meta: "13 abril 2026",
+        text:
+          "Me ha gustado mucho. El autor nos muestra una educacion financiera muy interesante para aprender y reflexionar. La palabra \"tiempo\" lo define todo. Recomiendo su lectura",
+      },
+      {
+        title: "Manual de principio a fin, un 10",
+        meta: "7 abril 2026",
+        text:
+          "Lo lleva a las situaciones más cotidianas de cualquier tipo de persona, independientemente de si eres un experto en inversión, estás iniciándote o quieres empezar sin haber estudiado nada al respecto. Es una guía fundamental para tomar el control de tu situación financiera.",
+      },
+    ],
+  },
   faq: [
     {
       question: "¿Es un libro para principiantes o hace falta saber de inversión?",

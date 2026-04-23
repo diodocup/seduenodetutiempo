@@ -677,6 +677,151 @@ summary:focus-visible {
   gap: 18px;
 }
 
+.testimonial-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.testimonial-carousel {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+}
+
+.testimonial-viewport {
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: var(--shadow-lg);
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.32s ease;
+  will-change: transform;
+}
+
+.testimonial-slide {
+  position: relative;
+  flex: 0 0 100%;
+  padding: clamp(22px, 3vw, 30px);
+  border-radius: 28px;
+  border: 1px solid rgba(33, 73, 58, 0.12);
+  background:
+    radial-gradient(circle at top right, rgba(199, 166, 107, 0.2), transparent 30%),
+    linear-gradient(180deg, rgba(255, 251, 244, 0.96), rgba(247, 239, 227, 0.94));
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.testimonial-stars svg {
+  width: 18px;
+  height: 18px;
+  fill: #d98a1c;
+}
+
+.testimonial-slide h3 {
+  margin: 0;
+  max-width: 20ch;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.testimonial-excerpt {
+  margin: 16px 0 0;
+  max-width: 68ch;
+  color: var(--text);
+  font-size: clamp(16px, 1.45vw, 19px);
+  line-height: 1.58;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.testimonial-meta {
+  margin: 14px 0 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.testimonial-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(33, 73, 58, 0.14);
+  border-radius: 50%;
+  background: rgba(255, 251, 244, 0.88);
+  color: var(--accent);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.testimonial-nav span {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.testimonial-nav:hover,
+.testimonial-nav:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(17, 43, 34, 0.12);
+}
+
+.testimonial-nav:disabled {
+  opacity: 0.38;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.testimonial-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(33, 73, 58, 0.18);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.testimonial-dot.is-active {
+  background: var(--accent);
+  transform: scale(1.08);
+}
+
+.testimonial-caption {
+  margin-top: 12px;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
 .resource-card {
   padding: 28px 32px;
   border-radius: var(--radius-lg);
@@ -755,6 +900,11 @@ summary:focus-visible {
   color: var(--text-muted);
   font-size: 17px;
   line-height: 1.7;
+}
+
+.author-bio {
+  display: grid;
+  gap: 14px;
 }
 
 .contact-links {
@@ -893,6 +1043,11 @@ summary:focus-visible {
     max-width: 320px;
   }
 
+  .problem-card,
+  .pillar-card {
+    min-height: 0;
+  }
+
   .closing-card {
     flex-direction: column;
     align-items: start;
@@ -1028,7 +1183,8 @@ summary:focus-visible {
   .audience-card,
   .contact-card,
   .closing-card,
-  .resource-card {
+  .resource-card,
+  .testimonial-slide {
     padding: 22px;
   }
 
@@ -1067,6 +1223,37 @@ summary:focus-visible {
   .hero-actions,
   .closing-actions {
     flex-direction: column;
+  }
+
+  .testimonial-carousel {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .testimonial-nav {
+    width: 100%;
+    height: 46px;
+    border-radius: 999px;
+  }
+
+  .testimonial-nav-prev {
+    order: 2;
+  }
+
+  .testimonial-viewport {
+    order: 1;
+  }
+
+  .testimonial-nav-next {
+    order: 3;
+  }
+
+  .testimonial-slide h3 {
+    max-width: none;
+  }
+
+  .testimonial-excerpt {
+    font-size: 18px;
   }
 
   .button {

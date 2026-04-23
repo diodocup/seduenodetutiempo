@@ -40,7 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=20260423-1" />
+    <link rel="stylesheet" href="style.css?v=20260423-2" />
   </head>
   <body>
     <div class="page-bg" aria-hidden="true"></div>
@@ -280,6 +280,40 @@
         </div>
       </section>
 
+      <section class="section" id="opiniones">
+        <div class="container">
+          <div class="section-heading testimonial-heading">
+            <h2>Opiniones de los lectores</h2>
+          </div>
+
+          <div class="testimonial-carousel">
+            <button
+              class="testimonial-nav testimonial-nav-prev"
+              type="button"
+              id="testimonial-prev"
+              aria-label="Ver reseña anterior"
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div class="testimonial-viewport">
+              <div class="testimonial-track" id="testimonial-track"></div>
+            </div>
+
+            <button
+              class="testimonial-nav testimonial-nav-next"
+              type="button"
+              id="testimonial-next"
+              aria-label="Ver siguiente reseña"
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+
+          <div class="testimonial-dots" id="testimonial-dots" aria-label="Selector de reseñas"></div>
+        </div>
+      </section>
+
       <section class="section" id="faq">
         <div class="container">
           <div class="section-heading">
@@ -333,12 +367,30 @@
           <div class="contact-card">
             <div class="contact-copy">
               <p class="section-label">Contacto</p>
-              <h2>Escribe al autor o síguelo en Instagram</h2>
-              <p>
-                Si quieres trasladar una consulta, comentar una idea o seguir
-                nuevas publicaciones sobre libertad financiera y patrimonio,
-                aquí tienes sus dos canales directos.
-              </p>
+              <h2>Sobre el autor</h2>
+              <div class="author-bio">
+                <p>
+                  Rubén Soro Esteban es ingeniero industrial y directivo en el
+                  sector de las energías renovables. Ha sido director de gestión
+                  de activos y actualmente es director de ingeniería,
+                  construcción y compras, con experiencia directa en inversión,
+                  riesgo, financiación, costes y creación de valor a largo
+                  plazo.
+                </p>
+                <p>
+                  En <em>Sé dueño de tu tiempo</em> traslada esa experiencia al
+                  ámbito personal para ofrecer una visión práctica sobre libertad
+                  financiera, vivienda, fondos indexados y activos reales. Su
+                  enfoque parte de una idea clara: el dinero no es un fin en sí
+                  mismo, sino una herramienta para recuperar tiempo, autonomía y
+                  capacidad de decisión sobre la propia vida.
+                </p>
+                <p>
+                  Su trabajo combina experiencia profesional, análisis
+                  patrimonial y una visión crítica sobre ahorro e inversión
+                  aplicada a la realidad española.
+                </p>
+              </div>
 
               <div class="contact-links">
                 <a
@@ -348,6 +400,14 @@
                   rel="noreferrer"
                 >
                   @rubensoro.libertad
+                </a>
+                <a
+                  class="contact-email"
+                  href="https://es.linkedin.com/in/ruben-soro-esteban-34328484"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
                 </a>
                 <a class="contact-email" href="mailto:rsoroesteban@gmail.com">
                   rsoroesteban@gmail.com
@@ -403,6 +463,6 @@
     </div>
 
     <script type="application/ld+json" id="book-schema"></script>
-    <script type="module" src="script.js?v=20260423-1"></script>
+    <script type="module" src="script.js?v=20260423-2"></script>
   </body>
 </html>
