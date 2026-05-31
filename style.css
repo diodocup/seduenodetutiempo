@@ -861,6 +861,64 @@ summary:focus-visible {
   margin-top: 20px;
 }
 
+.related-book {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
+  gap: clamp(22px, 4vw, 42px);
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 36px);
+  border: 1px solid rgba(33, 73, 58, 0.12);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at top right, rgba(199, 166, 107, 0.18), transparent 32%),
+    linear-gradient(180deg, rgba(255, 251, 244, 0.96), rgba(247, 239, 227, 0.94));
+  box-shadow: var(--shadow-md);
+}
+
+.related-book-cover {
+  display: block;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(17, 43, 34, 0.16);
+  transform: rotate(-1.5deg);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.related-book-cover:hover,
+.related-book-cover:focus-visible {
+  transform: translateY(-2px) rotate(-1deg);
+  box-shadow: 0 24px 52px rgba(17, 43, 34, 0.22);
+}
+
+.related-book-cover img {
+  width: 100%;
+  height: auto;
+}
+
+.related-book-copy h2 {
+  margin: 10px 0 12px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.related-book-copy p:not(.section-label) {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.related-book-copy .button {
+  margin-top: 20px;
+}
+
 .audience-card {
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -1030,7 +1088,8 @@ summary:focus-visible {
   .problem-grid,
   .pillar-grid,
   .audience-grid,
-  .resource-grid {
+  .resource-grid,
+  .related-book {
     grid-template-columns: 1fr;
   }
 
@@ -1070,6 +1129,10 @@ summary:focus-visible {
     width: 100%;
     flex: none;
     margin-top: 20px;
+  }
+
+  .related-book-cover {
+    width: min(180px, 46vw);
   }
 
 }
