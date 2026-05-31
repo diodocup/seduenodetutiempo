@@ -863,12 +863,12 @@ summary:focus-visible {
 
 .related-book {
   display: grid;
-  grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
-  gap: clamp(22px, 4vw, 42px);
+  grid-template-columns: minmax(96px, 142px) minmax(0, 1fr);
+  gap: clamp(18px, 3vw, 32px);
   align-items: center;
-  max-width: 900px;
+  max-width: 760px;
   margin: 0 auto;
-  padding: clamp(24px, 4vw, 36px);
+  padding: clamp(20px, 3vw, 28px);
   border: 1px solid rgba(33, 73, 58, 0.12);
   border-radius: var(--radius-lg);
   background:
@@ -879,9 +879,11 @@ summary:focus-visible {
 
 .related-book-cover {
   display: block;
+  width: min(142px, 34vw);
+  max-width: 142px;
   overflow: hidden;
-  border-radius: 14px;
-  box-shadow: 0 18px 40px rgba(17, 43, 34, 0.16);
+  border-radius: 12px;
+  box-shadow: 0 14px 32px rgba(17, 43, 34, 0.16);
   transform: rotate(-1.5deg);
   transition:
     transform 0.22s ease,
@@ -895,14 +897,15 @@ summary:focus-visible {
 }
 
 .related-book-cover img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .related-book-copy h2 {
-  margin: 10px 0 12px;
+  margin: 8px 0 10px;
   font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(30px, 4vw, 46px);
+  font-size: clamp(26px, 3vw, 38px);
   line-height: 1.02;
   letter-spacing: -0.03em;
 }
@@ -911,12 +914,12 @@ summary:focus-visible {
   margin: 0;
   max-width: 62ch;
   color: var(--text-muted);
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.62;
 }
 
 .related-book-copy .button {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .audience-card {
@@ -1132,7 +1135,8 @@ summary:focus-visible {
   }
 
   .related-book-cover {
-    width: min(180px, 46vw);
+    width: min(140px, 42vw);
+    max-width: 140px;
   }
 
 }

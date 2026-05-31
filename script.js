@@ -1,4 +1,4 @@
-import { SITE_CONTENT } from "./content.js?v=20260423-1";
+import { SITE_CONTENT } from "./content.js?v=20260531-2";
 
 function renderParagraphs(items) {
   return items.map((item) => `<p>${item}</p>`).join("");

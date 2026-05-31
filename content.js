@@ -243,6 +243,24 @@ export const SITE_CONTENT = {
         text:
           "Lo lleva a las situaciones más cotidianas de cualquier tipo de persona, independientemente de si eres un experto en inversión, estás iniciándote o quieres empezar sin haber estudiado nada al respecto. Es una guía fundamental para tomar el control de tu situación financiera.",
       },
+      {
+        title: "Una guía que todo el mundo debería leer",
+        meta: "29 abril 2026",
+        text:
+          "Lo que más me ha gustado es que está muy centrado en la realidad de España. No es el típico contenido adaptado de fuera, sino que habla de vivienda, fiscalidad, ahorro o inversión con ejemplos que encajan con lo que vivimos aquí.",
+      },
+      {
+        title: "Una guía clara para empezar a tomar mejores decisiones financieras",
+        meta: "24 abril 2026",
+        text:
+          "Es un libro directo, bien estructurado y fácil de leer para quien quiere poner orden en sus finanzas personales.",
+      },
+      {
+        title: "Claro y conciso",
+        meta: "14 mayo 2026",
+        text:
+          "Un libro claro que va al grano, te explica el porqué invertir y como hacerlo, genera una base para que tú mismo seas capaz de ver que el dinero parado no sirve de nada y te da unas pinceladas de por donde caminar. No es el típico libro vendehumos que te promete ser rico en 30 días.",
+      },
     ],
   },
   faq: [
