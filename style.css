@@ -75,6 +75,29 @@ select {
   margin: 0 auto;
 }
 
+.back-bar {
+  background: var(--bg-deep);
+  padding: 8px 0;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-inverse);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.72;
+  transition: opacity 0.2s ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  opacity: 1;
+}
+
 .site-header {
   position: sticky;
   top: 0;
