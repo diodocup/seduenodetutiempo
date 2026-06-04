@@ -75,27 +75,40 @@ select {
   margin: 0 auto;
 }
 
-.back-bar {
-  background: var(--bg-deep);
-  padding: 8px 0;
+.nav-back {
+  color: var(--accent);
+  font-weight: 700;
+  white-space: nowrap;
+  padding-right: 22px;
+  border-right: 1px solid rgba(26, 34, 28, 0.18);
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
-.back-link {
+.nav-back:hover,
+.nav-back:focus-visible {
+  color: var(--accent-soft-strong);
+}
+
+.footer-back {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  color: var(--text-inverse);
-  font-family: "Manrope", sans-serif;
+  flex-shrink: 0;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(255, 251, 244, 0.72);
+  border: 1px solid rgba(33, 73, 58, 0.12);
+  color: var(--accent);
+  font-weight: 700;
   font-size: 13px;
-  font-weight: 600;
   text-decoration: none;
-  opacity: 0.72;
-  transition: opacity 0.2s ease;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
-.back-link:hover,
-.back-link:focus-visible {
-  opacity: 1;
+.footer-back:hover,
+.footer-back:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 18, 15, 0.08);
 }
 
 .site-header {
