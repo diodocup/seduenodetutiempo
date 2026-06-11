@@ -7,7 +7,7 @@ export const SITE_CONTENT = {
     ogImage: "assets/cover-amazon.jpg",
     amazonUrl:
       "https://www.amazon.es/DUE%C3%91O-TIEMPO-convertir-patrimonio-inversi%C3%B3n-ebook/dp/B0GKSF97GS",
-    downloadUrl: "assets/Calculadora.xlsx",
+    downloadUrl: "assets/Calculadora.xlsx?v=20260611",
     sampleUrl: "assets/SE_DUENO_DE_TU_TIEMPO_MUESTRA.pdf",
     author: "Rubén Soro Esteban",
     language: "es-ES",
