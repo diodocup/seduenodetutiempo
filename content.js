@@ -66,9 +66,9 @@ export const SITE_CONTENT = {
     },
   ],
   toolkit: {
-    title: "Llévate también la hoja de cálculo",
+    title: "Llévate también la calculadora",
     text:
-      "Un recurso descargable para llevar las ideas del libro a números, escenarios y decisiones más concretas sin quedarte solo en la teoría.",
+      "Disponible como app para Android o como hoja de cálculo descargable, para llevar las ideas del libro a números, escenarios y decisiones más concretas sin quedarte solo en la teoría.",
   },
   sample: {
     title: "Lee una parte real del libro",

@@ -897,6 +897,17 @@ summary:focus-visible {
   margin-top: 20px;
 }
 
+.resource-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.resource-actions .button {
+  margin-top: 0;
+}
+
 .related-book {
   display: grid;
   grid-template-columns: minmax(96px, 142px) minmax(0, 1fr);
