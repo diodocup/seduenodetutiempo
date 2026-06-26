@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descargas | Sé dueño de tu tiempo</title>
+    <meta
+      name="description"
+      content="Descarga la calculadora de Sé dueño de tu tiempo en formato Excel o app Android."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#13261f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=20260604-2" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Volver a la página principal">
+          <span class="header-book" aria-hidden="true">
+            <img
+              src="assets/cover-amazon.jpg"
+              alt=""
+              width="100"
+              height="150"
+              loading="eager"
+              decoding="async"
+            />
+          </span>
+          <span class="brand-text">
+            <span class="brand-title">Sé dueño de tu tiempo</span>
+            <span class="brand-author">Rubén Soro Esteban</span>
+          </span>
+        </a>
+
+        <a class="button button-primary button-header" href="index.html">
+          Volver al libro
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Descarga confirmada</p>
+            <h1 class="hero-title">Tu calculadora</h1>
+            <p class="hero-subtitle">
+              Gracias por confirmar tu email. Aquí tienes la herramienta del libro en los dos formatos disponibles.
+            </p>
+            <div class="hero-body">
+              <p>
+                Puedes usar la hoja de cálculo si quieres trabajar desde ordenador o la app Android si prefieres llevarla en el móvil.
+              </p>
+            </div>
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="assets/Calculadora_v2.xlsx"
+                download
+              >
+                Descargar hoja Excel
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://drive.google.com/file/d/17hr4lD9b17loOZgSNKeo1AwPjThspwOu/view?usp=drive_link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Descargar app Android
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-visual" aria-label="Portada del libro">
+            <div class="book-stage">
+              <div class="book-frame">
+                <img
+                  src="assets/cover-amazon.jpg"
+                  alt="Portada del libro Sé dueño de tu tiempo"
+                  width="1000"
+                  height="1500"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Sé dueño de tu tiempo · Rubén Soro Esteban</p>
+        <a class="footer-back" href="index.html">← Volver al libro</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
