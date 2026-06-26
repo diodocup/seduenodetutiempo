@@ -59,7 +59,12 @@ function addDownloadNotice() {
     ? "Déjame tu email, confirma el correo de Kit y recibirás los enlaces para descargar el Excel o la app. También podrás apuntarte a la newsletter del autor."
     : "Pendiente de conectar Kit: cuando esté creada la URL del formulario, estos botones pedirán email antes de enviar las descargas.";
 
-  actions.after(notice);
+  const privacyNote = document.createElement("p");
+  privacyNote.className = "privacy-note";
+  privacyNote.innerHTML =
+    'Al suscribirte aceptas recibir comunicaciones por email sobre patrimonio, inversión y libertad financiera. Puedes darte de baja cuando quieras. Consulta la <a href="privacidad.html">política de privacidad</a>.';
+
+  actions.after(notice, privacyNote);
 }
 
 function addNewsletterLink() {
@@ -76,6 +81,27 @@ function addNewsletterLink() {
   contactLinks.prepend(link);
 }
 
+function addLegalFooterLinks() {
+  const footer = document.querySelector(".footer-inner");
+  if (!footer || footer.querySelector(".legal-footer-links")) return;
+
+  const nav = document.createElement("nav");
+  nav.className = "legal-footer-links";
+  nav.setAttribute("aria-label", "Enlaces legales");
+  nav.innerHTML = `
+    <a class="footer-back" href="privacidad.html">Privacidad</a>
+    <a class="footer-back" href="aviso-legal.html">Aviso legal</a>
+    <a class="footer-back" href="https://www.rubensoro.es">← Todos los libros</a>
+  `;
+
+  const oldBackLink = footer.querySelector(".footer-back");
+  if (oldBackLink) {
+    oldBackLink.remove();
+  }
+  footer.append(nav);
+}
+
 updateDownloadLinks();
 addDownloadNotice();
 addNewsletterLink();
+addLegalFooterLinks();
