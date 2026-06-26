@@ -12,6 +12,12 @@ Tambien existe una pagina propia para entregar las descargas despues de confirma
 https://diodocup.github.io/seduenodetutiempo/descargas.html
 ```
 
+La politica de privacidad publicada esta aqui:
+
+```text
+https://diodocup.github.io/seduenodetutiempo/privacidad.html
+```
+
 ## Flujo recomendado
 
 1. El usuario pulsa el boton de descarga en la web.
@@ -23,8 +29,7 @@ https://diodocup.github.io/seduenodetutiempo/descargas.html
 ## Ajustes sugeridos en Kit
 
 - Mantener confirmacion por email o doble opt-in.
-- Buscar en el formulario una opcion como `After confirming`, `Redirect`, `Success page`, `Incentive URL` o `Confirmation settings`.
-- Usar esta URL como destino despues de confirmar:
+- En `Confirmation email`, usar esta URL como destino despues de confirmar:
 
 ```text
 https://diodocup.github.io/seduenodetutiempo/descargas.html
@@ -32,11 +37,15 @@ https://diodocup.github.io/seduenodetutiempo/descargas.html
 
 - Anadir una etiqueta general: `seduenodetutiempo`.
 - Anadir otra etiqueta si quieres distinguir el origen: `descarga_calculadora`.
-- Incluir una frase clara de consentimiento si tambien enviaras newsletter.
+- Incluir una frase clara de consentimiento y privacidad en el formulario.
 
 Texto sugerido para el formulario:
 
-> Recibe la calculadora y apuntate a la newsletter de Ruben Soro sobre patrimonio, inversion y libertad financiera. Podras elegir entre la hoja Excel y la app Android, y darte de baja cuando quieras.
+> Recibe gratis la calculadora de Se dueno de tu tiempo y apuntate a la newsletter de Ruben Soro sobre patrimonio, inversion y libertad financiera. Podras elegir entre la hoja Excel y la app Android, y darte de baja cuando quieras.
+
+Texto legal corto para poner debajo del formulario:
+
+> Al suscribirte aceptas recibir comunicaciones por email sobre patrimonio, inversion y libertad financiera. Puedes darte de baja cuando quieras. Consulta la politica de privacidad: https://diodocup.github.io/seduenodetutiempo/privacidad.html
 
 ## Enlaces de descarga incluidos en la pagina
 
