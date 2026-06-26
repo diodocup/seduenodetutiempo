@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aviso legal | Sé dueño de tu tiempo</title>
+    <meta
+      name="description"
+      content="Aviso legal de la web Sé dueño de tu tiempo."
+    />
+    <meta name="theme-color" content="#13261f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=20260604-2" />
+    <link rel="stylesheet" href="legal.css?v=20260626-1" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Volver a la página principal">
+          <span class="brand-text">
+            <span class="brand-title">Sé dueño de tu tiempo</span>
+            <span class="brand-author">Rubén Soro Esteban</span>
+          </span>
+        </a>
+        <a class="button button-primary button-header" href="index.html">Volver al libro</a>
+      </div>
+    </header>
+
+    <main class="legal-section">
+      <article class="container legal-card">
+        <p class="eyebrow">Información legal</p>
+        <h1>Aviso legal</h1>
+        <p class="legal-meta">Última actualización: 26 de junio de 2026</p>
+
+        <h2>1. Titular de la web</h2>
+        <p>
+          Esta web está vinculada al libro <em>Sé dueño de tu tiempo</em> y a los recursos asociados del autor Rubén Soro Esteban.
+        </p>
+        <p>
+          Email de contacto: <a href="mailto:rsoroesteban@gmail.com">rsoroesteban@gmail.com</a>.
+        </p>
+        <p>
+          Si fuera necesario facilitar datos identificativos adicionales para una gestión concreta, reclamación o requerimiento legítimo, podrán solicitarse a través del email de contacto.
+        </p>
+
+        <h2>2. Objeto</h2>
+        <p>
+          La finalidad de esta web es informar sobre el libro, facilitar una muestra gratuita, ofrecer recursos de apoyo como la calculadora y permitir el contacto o suscripción a comunicaciones del autor.
+        </p>
+
+        <h2>3. Propiedad intelectual</h2>
+        <p>
+          Salvo indicación expresa en contrario, los textos, imágenes, diseño, recursos descargables y demás contenidos de esta web pertenecen a su titular o se usan con autorización o bajo licencias aplicables.
+        </p>
+        <p>
+          No se permite la reproducción, distribución, transformación o explotación comercial de los contenidos sin autorización previa, salvo los usos permitidos por la ley.
+        </p>
+
+        <h2>4. Uso de la web</h2>
+        <p>
+          El usuario se compromete a usar la web de forma lícita, diligente y respetuosa. Queda prohibido utilizarla para fines fraudulentos, ilícitos o que puedan dañar la web, sus servicios o la imagen del titular.
+        </p>
+
+        <h2>5. Contenido financiero</h2>
+        <p>
+          Los contenidos de esta web, del libro, de la newsletter y de la calculadora tienen finalidad informativa y educativa. No constituyen asesoramiento financiero, fiscal, legal ni recomendación personalizada de inversión.
+        </p>
+        <p>
+          Cada persona debe valorar su situación particular y, si lo necesita, acudir a profesionales cualificados antes de tomar decisiones económicas o patrimoniales.
+        </p>
+
+        <h2>6. Enlaces externos</h2>
+        <p>
+          La web puede incluir enlaces a servicios de terceros, como Amazon, Kit, Google Drive, LinkedIn u otras páginas relacionadas. El titular no controla esos sitios ni responde de sus contenidos, condiciones o políticas, que corresponden a sus respectivos responsables.
+        </p>
+
+        <h2>7. Responsabilidad</h2>
+        <p>
+          Se procura mantener la información actualizada y accesible, pero no se garantiza la ausencia de errores, interrupciones o incidencias técnicas. El titular no será responsable de daños derivados del mal uso de la web o de decisiones tomadas exclusivamente a partir de sus contenidos.
+        </p>
+
+        <h2>8. Protección de datos</h2>
+        <p>
+          La información sobre el tratamiento de datos personales está disponible en la <a href="privacidad.html">política de privacidad</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Sé dueño de tu tiempo · Rubén Soro Esteban</p>
+        <nav class="legal-footer-links" aria-label="Enlaces legales">
+          <a class="footer-back" href="index.html">← Volver al libro</a>
+          <a class="footer-back" href="privacidad.html">Privacidad</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
